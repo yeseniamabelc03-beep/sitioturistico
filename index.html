@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Encuesta visita Cotopaxi</h2>
+
+<form>
+  <label for="nombre">Ingrese su nombre:</label><br>
+  <input type="text" id="nombre" name="nombre" placeholder="Escriba su nombre"><br><br>
+  <label for="nacionalidad">Ingrese su nacionalidad:</label><br>
+  <input type="text" id="nacionalidad" name="nacionalidad" placeholder="Escriba su nacionalidad"><br><br>
+
+  <label for="transporte">Que medio de transporte utilizo?</label><br>
+  <select id="transporte" name="transporte">
+    <option value="vehiculo propio">Vehiculo propio</option>
+    <option value="transporte publico">Transporte publico</option>
+    <option value="transporte turistico">Transporte turistico</option>
+  </select><br><br>
+
+  <label>Con quien realiza la visita?</label><br>
+  <input type="radio" id="pareja" name="acomp" value="pareja">
+  <label for="pareja">Pareja</label><br>
+  <input type="radio" id="solo" name="acomp" value="solo">
+  <label for="solo">Solo</label><br>
+  <input type="radio" id="familia" name="acomp" value="familia">
+  <label for="familia">Familia</label><br>
+  <input type="radio" id="amigos" name="acomp" value="amigos">
+  <label for="amigos">Amigos</label><br>
+  <input type="radio" id="grupo" name="acomp" value="grupo organizado">
+  <label for="grupo">Grupo organizado</label><br><br>
+
+  <label>Que atractivos turisticos visito?</label><br>
+  <input type="checkbox" id="volcan" name="atractivo" value="volcan">
+  <label for="volcan">Volcan Cotopaxi</label><br>
+  <input type="checkbox" id="laguna" name="atractivo" value="laguna">
+  <label for="laguna">Laguna </label><br>
+  <input type="checkbox" id="refugio" name="atractivo" value="refugio">
+  <label for="refugio">Refugio</label><br>
+  <input type="checkbox" id="senderos" name="atractivo" value="senderos">
+  <label for="senderos">Senderos </label><br><br>
+
+  <label for="duracion">Cuanto duro su visita?</label><br>
+  <select id="duracion" name="duracion">
+    <option value="menos de 2 h">Menos de 2 horas</option>
+    <option value="2 a 4 h">De 2 a 4 horas</option>
+    <option value="4 a 6 h">De 4 a 6 horas</option>
+    <option value="mas de 6 h">Mas de 6 horas</option>
+  </select><br><br>
+
+  <label for="fecha">En que fecha realizo su visita?</label><br>
+  <input type="date" id="fecha" name="fecha"><br><br>
+
+  <label for="telefono">Ingrese su telefono:</label><br>
+    <input type="tel" id="telefono" name="telefono" placeholder="0991234567" pattern="09[0-9]{8}" maxlength="10"
+required><br><br>
+
+  <label for="calificacion">
+    Califique su experiencia del 1 al 5:
+  </label><br>
+  <input type="number" id="calificacion" name="calificacion"
+         min="1" max="5" placeholder="Del 1 al 5"><br><br>
+
+  <label for="correo">Ingrese su correo:</label><br>
+  <input type="email" id="correo" name="correo"
+         placeholder="mabel@correo.com"><br><br>
+
+  <label for="recomendaciones">Escriba sus recomendaciones:</label><br>
+  <textarea id="recomendaciones" name="recomendaciones" rows="5" cols="20"
+            placeholder="recomendaciones.."></textarea><br><br>
+  <input type="submit" value="enviar">
+</form>
+</body>
+</html>
